@@ -1,0 +1,6 @@
+dynamicsLower = {
+
+  \barNumberCheck 1
+
+
+}

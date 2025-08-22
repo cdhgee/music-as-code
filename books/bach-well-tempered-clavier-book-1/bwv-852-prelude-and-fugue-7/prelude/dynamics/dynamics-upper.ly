@@ -1,0 +1,6 @@
+dynamicsUpper = {
+
+  \barNumberCheck 1
+
+
+}

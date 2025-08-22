@@ -1,0 +1,5 @@
+\include "setup.ly"
+\include "markup.ly"
+\include "paper.ly"
+\include "make-piano-score.ly"
+\include "music.ly"

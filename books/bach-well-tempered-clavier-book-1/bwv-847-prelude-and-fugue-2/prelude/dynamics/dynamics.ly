@@ -1,7 +1,7 @@
 dynamics = {
 
   \barNumberCheck 1
-  \displayMusic { s2\f^> } s2-> |
+  s2\f^> s2-> |
   s2-> s2-> |
   s1 |
   s1 |

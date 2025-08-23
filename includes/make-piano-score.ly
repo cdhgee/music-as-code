@@ -13,6 +13,7 @@ makePianoScore = #(define-scheme-function
       (tempi (assoc-get 'tempi opts #{ #}))
       (pages (assoc-get 'pages opts #f))
       (systems (assoc-get 'systems opts 0))
+
     )
     #{
       \score {
@@ -41,7 +42,7 @@ makePianoScore = #(define-scheme-function
           \new Staff = "upper" \with {
             \override Fingering.direction = #UP
           } {
-            \tocItem #title
+            \tocItem #(string-append title ", " opus)
             #upper
           }
           \new Dynamics = "dynamics-middle" \with {

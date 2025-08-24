@@ -8,6 +8,6 @@
 \include "bwv-849-prelude-and-fugue-4/fugue/score.ly"
 \include "bwv-850-prelude-and-fugue-5/prelude/score.ly"
 \include "bwv-850-prelude-and-fugue-5/fugue/score.ly"
-% \include "bwv-851-prelude-and-fugue-6/prelude/score.ly"
-% \include "bwv-851-prelude-and-fugue-6/fugue/score.ly"
+\include "bwv-851-prelude-and-fugue-6/prelude/score.ly"
+\include "bwv-851-prelude-and-fugue-6/fugue/score.ly"
 \include "bwv-852-prelude-and-fugue-7/prelude/score.ly"

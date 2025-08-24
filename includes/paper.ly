@@ -8,12 +8,6 @@ conditionalPaperBlock = #(define-scheme-function
     (eq? bookMode #t)
     #{
       \paper {
-        oddHeaderMarkup = \markup {
-          \unless \on-page #1  \right-align \fromproperty #'page:page-number-string
-        }
-        evenHeaderMarkup = \markup {
-          \unless \on-page #0  \left-align \fromproperty #'page:page-number-string
-        }
         bookTitleMarkup = \markup {
           \center-column {
             \vspace #14
@@ -32,11 +26,21 @@ conditionalPaperBlock = #(define-scheme-function
             }
           }
         }
+        first-page-number = #0
+        evenHeaderMarkup = \markup \fill-line {
+          \unless \on-page #0 \fromproperty #'page:page-number-string
+          \null
+        }
+        oddHeaderMarkup = \markup \fill-line {
+          \null
+          \unless \on-page #1 \fromproperty #'page:page-number-string
+        }
       }
     #}
     #{
       \paper {
         bookTitleMarkup = ##f
+        first-page-number = #1
       }
     #}
   )
@@ -104,10 +108,12 @@ conditionalPaperBlock = #(define-scheme-function
   % ) % defaults: 12, 8, 1, 60
 
   last-bottom-spacing =
-    #'((basic-distance . 6)
-       (minimum-distance . 4)
-       (padding . 3)
-       (stretchability . 30)) % defaults 1, 0, 1, 30
+    #'(
+      (basic-distance . 6)
+      (minimum-distance . 4)
+      (padding . 3)
+      (stretchability . 30)
+    ) % defaults 1, 0, 1, 30
 
   % top-system-spacing.minimum-distance = 10
   page-breaking = #ly:minimal-breaking
@@ -132,7 +138,6 @@ conditionalPaperBlock = #(define-scheme-function
   tocItemMarkup = \tocItemWithDotsMarkup
   auto-first-page-number = ##t
   print-first-page-number = ##f
-  first-page-number = 0
 
   print-all-headers = ##t
   page-breaking = #ly:optimal-breaking

@@ -1,6 +1,6 @@
 
 global = {
-  \time 6/4
+  \changeTime 6/4
   \key cs \minor
   \mergeDifferentlyHeadedOn
   \mergeDifferentlyDottedOn

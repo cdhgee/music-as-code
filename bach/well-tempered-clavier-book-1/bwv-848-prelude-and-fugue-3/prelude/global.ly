@@ -1,6 +1,6 @@
 
 global = {
-  \time 3/8
+  \changeTime 3/8
   \key cs \major
   \mergeDifferentlyHeadedOn
   \mergeDifferentlyDottedOn

@@ -1,5 +1,5 @@
 global = {
-  \time 4/4
+  \changeTime 4/4
   \key ef\major
   \mergeDifferentlyHeadedOn
   \mergeDifferentlyDottedOn

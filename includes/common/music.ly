@@ -1,6 +1,5 @@
 \include "timing.ly"
 \include "beaming.ly"
-\include "voices.ly"
 \include "notes.ly"
 \include "tuplets.ly"
 

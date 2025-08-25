@@ -1,6 +1,7 @@
 \version "2.24.4"
 
-\include "../../../includes/common-pre.ly"
+\include "../../../includes/common/common.ly"
+\include "../../../includes/piano/piano.ly"
 \include "fugue/score.ly"
 \include "../header.ly"
 

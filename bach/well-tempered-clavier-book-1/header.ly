@@ -1,4 +1,4 @@
-\include "../../includes/base-header.ly"
+\include "../../includes/common/base-header.ly"
 
 \header {
   title = "The Well-Tempered Clavier, Book 1"

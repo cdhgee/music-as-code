@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\include "../../includes/book-common-pre.ly"
+\include "../../includes/common/book-common-pre.ly"
 \include "score-list.ly"
 \include "header.ly"
 

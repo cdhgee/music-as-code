@@ -80,7 +80,7 @@ conditionalPaperBlock = #(define-scheme-function
   % Distance between two systems in the same score
   system-system-spacing = #'(
     (basic-distance . 0.1)
-    (padding . 0.1)
+    (padding . 4)
     (stretchability . 60)
     (minimum-distance . 0.1)
   )
@@ -91,6 +91,14 @@ conditionalPaperBlock = #(define-scheme-function
   %   (stretchability . 60)
   %   (minimum-distance . 0.1)
   % )
+
+  score-markup-spacing = #'(
+    (basic-distance . 0.6)
+    (padding . 0.1)
+    (stretchability . 60)
+    (minimum-distance . 0.1)
+  )
+
 
   % score-system-spacing = #'(
   %   (basic-distance . 0.1)

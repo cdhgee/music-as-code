@@ -1,7 +1,7 @@
 # Music as Code
 A collection of music transcribed using Lilypond.
 
-## Index
+## For solo piano
 
 * [Johann Sebastian Bach](bach)
   * [The Well-Tempered Clavier, Book 1 (BWV 846-869)](bach/well-tempered-clavier-book-1)
@@ -12,5 +12,7 @@ A collection of music transcribed using Lilypond.
     * [Prelude and Fugue No. 5 in D Major (BWV 850)](bach/well-tempered-clavier-book-1/bwv-850-prelude-and-fugue-5)
     * [Prelude and Fugue No. 6 in D Minor (BWV 851)](bach/well-tempered-clavier-book-1/bwv-851-prelude-and-fugue-6)
     * [Prelude and Fugue No. 7 in E♭ Major (BWV 852)](bach/well-tempered-clavier-book-1/bwv-852-prelude-and-fugue-7)
-* [Charles Hubert Hastings Parry](parry)
-  * [Dear Lord and Father of Mankind (Repton)](parry/dear-lord-and-father-of-mankind)
+
+## Hymns for choir and organ
+
+* [Dear Lord and Father of Mankind (Repton)](hymns/repton-dear-lord-and-father-of-mankind)

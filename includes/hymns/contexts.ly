@@ -1,15 +1,16 @@
-choralScoreContext = #(define-scheme-function
+hymnScoreContext = #(define-scheme-function
   ()
   ()
   #{
     \context {
       \Score
       \remove "Bar_number_engraver"
+      caesuraType = #'((bar-line . "||"))
     }
   #}
 )
 
-choralStaffContext = #(define-scheme-function
+hymnStaffContext = #(define-scheme-function
   ()
   ()
   #{
@@ -21,7 +22,7 @@ choralStaffContext = #(define-scheme-function
   #}
 )
 
-choralLyricsContext = #(define-scheme-function
+hymnLyricsContext = #(define-scheme-function
   ()
   ()
   #{

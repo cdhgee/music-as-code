@@ -19,3 +19,4 @@ A collection of music transcribed using Lilypond.
 * [Guide Me, O Thou Great Redeemer (Cwm Rhondda)](hymns/cwm-guide-me-o-thou-great-redeemer)
 * [How Shall I Sing that Majesty (Coe Fen)](hymns/coe-fen-how-shall-i-sing-that-majesty)
 * [O Worship the Lord in the Beauty of Holiness (Was Lebet)](hymns/was-lebet-o-worship-the-lord-in-the-beauty-of-holiness)
+* [The Church’s One Foundation (Aurelia)](hymns/aurelia-the-churchs-one-foundation)

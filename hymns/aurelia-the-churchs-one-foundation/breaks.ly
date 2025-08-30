@@ -1,0 +1,22 @@
+breaks = \relative c' {
+
+  \partial 4 s4
+  s1 |
+  s2. \breathe s4 |
+  s1 |
+  s2. \caesura \break s4 |
+  s1 |
+  s2. \breathe s4 |
+  s1 |
+  s2. \caesura \break s4 |
+  s1 |
+  s2. \breathe s4 |
+  s1 |
+  s2. \caesura \break s4 |
+  s1 |
+  s2. \breathe s4 |
+  s1 |
+  \partial 2. s2. |
+  \fine
+
+}

@@ -34,7 +34,7 @@ makeHymnScore = #(define-scheme-function
           'elements
           (map
             (lambda (music)
-              #{ \new Voice = #(car music) { #(cdr music) } #})
+              #{ \new Voice = #(car music) \with { \remove Breathing_sign_engraver } { #(cdr music) } #})
             lower-music
           )
         )

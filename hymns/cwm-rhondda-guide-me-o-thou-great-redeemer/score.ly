@@ -5,7 +5,7 @@
 
 \addScore \makeHymnScore #(list
   (cons 'title "Guide Me O Thou Great Redeemer")
-  (cons 'composer "John Huges")
+  (cons 'composer "John Hughes")
   (cons 'dates "1873-1932")
   (cons 'tune "Cwm Rhondda")
   (cons 'meter "87 87 47")

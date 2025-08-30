@@ -3,7 +3,7 @@
 \include "notes.ly"
 \include "tuplets.ly"
 
-smallNote = \tweak NoteHead.font-size -2 \etc
+smallNote = \tweak NoteHead.font-size #-2 \etc
 shiftArpeggio = \once \override Arpeggio.padding = #3
 
 changeFinger = #(define-scheme-function

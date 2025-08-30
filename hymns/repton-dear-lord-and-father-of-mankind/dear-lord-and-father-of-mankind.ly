@@ -4,6 +4,6 @@
 \include "../../includes/hymns/hymns.ly"
 
 \include "global.ly"
-\include "satb-score.ly"
+\include "score.ly"
 
 $@score-list

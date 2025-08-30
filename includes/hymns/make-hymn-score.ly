@@ -6,6 +6,11 @@ makeHymnScore = #(define-scheme-function
       (title (assoc-get 'title opts #f))
       (composer (assoc-get 'composer opts #f))
       (dates (assoc-get 'dates opts #f))
+      (composer-and-dates (cond
+        ((and composer dates) #{ \markup { #composer \smaller \smaller \concat { "(" #dates ")" } } #})
+        (composer composer)
+        (else #f)
+      ))
       (tune (assoc-get 'tune opts #f))
       (meter (assoc-get 'meter opts #f))
       (upper-music (assoc-get 'upper opts '()))
@@ -49,8 +54,7 @@ makeHymnScore = #(define-scheme-function
       \score {
       \header {
         title = #title
-        composer = #composer
-        dates = #dates
+        composer = #composer-and-dates
         tune = #tune
         meter = #meter
       }

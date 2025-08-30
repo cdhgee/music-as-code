@@ -13,12 +13,7 @@
         "    "
         \fromproperty #'header:meter
       }
-      \concat {
-        \fromproperty #'header:composer
-        \smaller \smaller "  ("
-        \smaller \smaller \fromproperty #'header:dates
-        \smaller \smaller ")"
-      }
+      \fromproperty #'header:composer
     }
     \vspace #1
   }

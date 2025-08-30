@@ -31,6 +31,7 @@ hymnLyricsContext = #(define-scheme-function
       \override StanzaNumber.font-series = #'medium
       \override StanzaNumber.font-size = #-1
       \override StanzaNumber.extra-offset = #'(-1 . 0)
+      \override LyricText.self-alignment-X = #LEFT
     }
   #}
 )

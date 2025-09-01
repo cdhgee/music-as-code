@@ -21,6 +21,7 @@ A collection of music transcribed using Lilypond.
 * [Hills of the North, Rejoice (Little Cornard)](hymns/little-cornard-hills-of-the-north-rejoice)
 * [Let All Mortal Flesh Keep Silence (Picardy)](hymns/picardy-let-all-mortal-flesh-keep-silence)
 * [Love Divine, All Loves Excelling (Love Divine)](hymns/love-divine-love-divine-all-loves-excelling)
+* [My Song is Love Unknown (Love Unknown)](hymns/love-unknown-my-song-is-love-unknown)
 * [How Shall I Sing that Majesty (Coe Fen)](hymns/coe-fen-how-shall-i-sing-that-majesty)
 * [O Worship the Lord in the Beauty of Holiness (Was Lebet)](hymns/was-lebet-o-worship-the-lord-in-the-beauty-of-holiness)
 * [The Church’s One Foundation (Aurelia)](hymns/aurelia-the-churchs-one-foundation)

@@ -31,6 +31,7 @@ makeGenericHymnScore = #(define-scheme-function
         \makeStaffGroups #staff-groups
         \layout {
           system-count = #systems
+          \hymnChoirStaffContext
           \hymnStaffContext
           \hymnScoreContext
           \hymnLyricsContext

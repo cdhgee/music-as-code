@@ -22,6 +22,18 @@ hymnStaffContext = #(define-scheme-function
   #}
 )
 
+hymnChoirStaffContext = #(define-scheme-function
+  ()
+  ()
+  #{
+    \context {
+      \ChoirStaff
+      \override SystemStartBracket.collapse-height = #0
+    }
+  #}
+)
+
+
 hymnLyricsContext = #(define-scheme-function
   ()
   ()

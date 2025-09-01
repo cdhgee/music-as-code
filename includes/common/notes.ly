@@ -15,6 +15,7 @@ move-note = #(define-music-function
 )
 
 noMove = \move-note #0
+teenyTinyMove = \move-note #0.8
 tinyMove = \move-note #1.0
 tinyMoveBack = \move-note #-1.0
 smallMove = \move-note #1.5

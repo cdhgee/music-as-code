@@ -17,6 +17,7 @@ A collection of music transcribed using Lilypond.
 
 * [Dear Lord and Father of Mankind (Repton)](hymns/repton-dear-lord-and-father-of-mankind)
 * [Guide Me, O Thou Great Redeemer (Cwm Rhondda)](hymns/cwm-guide-me-o-thou-great-redeemer)
+* [Let All Mortal Flesh Keep Silence (Picardy)](hymns/picardy-let-all-mortal-flesh-keep-silence)
 * [Love Divine, All Loves Excelling (Love Divine)](hymns/love-divine-love-divine-all-loves-excelling)
 * [How Shall I Sing that Majesty (Coe Fen)](hymns/coe-fen-how-shall-i-sing-that-majesty)
 * [O Worship the Lord in the Beauty of Holiness (Was Lebet)](hymns/was-lebet-o-worship-the-lord-in-the-beauty-of-holiness)

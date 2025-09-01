@@ -1,0 +1,7 @@
+leftHandVoiceThree = \relative c {
+
+  \voiceThree
+
+
+
+}

@@ -18,6 +18,7 @@ A collection of music transcribed using Lilypond.
 * [Dear Lord and Father of Mankind (Repton)](hymns/repton-dear-lord-and-father-of-mankind)
 * [Glorious Things of Thee Are Spoken (Abbot’s Leigh)](hymns/abbots-leigh-glorious-things-of-thee-are-spoken/)
 * [Guide Me, O Thou Great Redeemer (Cwm Rhondda)](hymns/cwm-guide-me-o-thou-great-redeemer)
+* [Hills of the North, Rejoice (Little Cornard)](hymns/little-cornard-hills-of-the-north-rejoice)
 * [Let All Mortal Flesh Keep Silence (Picardy)](hymns/picardy-let-all-mortal-flesh-keep-silence)
 * [Love Divine, All Loves Excelling (Love Divine)](hymns/love-divine-love-divine-all-loves-excelling)
 * [How Shall I Sing that Majesty (Coe Fen)](hymns/coe-fen-how-shall-i-sing-that-majesty)

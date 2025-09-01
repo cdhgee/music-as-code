@@ -1,0 +1,5 @@
+\include "descant.ly"
+\include "rh-voice1.ly"
+\include "rh-voice2.ly"
+\include "lh-voice1.ly"
+\include "lh-voice2.ly"

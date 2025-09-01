@@ -16,6 +16,7 @@ A collection of music transcribed using Lilypond.
 ## Hymns for choir and organ
 
 * [Dear Lord and Father of Mankind (Repton)](hymns/repton-dear-lord-and-father-of-mankind)
+* [Glorious Things of Thee Are Spoken (Abbot’s Leigh)](hymns/abbots-leigh-glorious-things-of-thee-are-spoken/)
 * [Guide Me, O Thou Great Redeemer (Cwm Rhondda)](hymns/cwm-guide-me-o-thou-great-redeemer)
 * [Let All Mortal Flesh Keep Silence (Picardy)](hymns/picardy-let-all-mortal-flesh-keep-silence)
 * [Love Divine, All Loves Excelling (Love Divine)](hymns/love-divine-love-divine-all-loves-excelling)

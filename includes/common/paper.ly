@@ -159,7 +159,6 @@ conditionalPaperBlock = #(define-scheme-function
 addScore = #(define-void-function
   (sc)
   (ly:score?)
-  (display "adding a score")
   (set!
     score-list
     (append score-list (list sc))

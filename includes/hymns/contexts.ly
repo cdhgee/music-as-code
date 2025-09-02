@@ -17,6 +17,7 @@ hymnStaffContext = #(define-scheme-function
     \context {
       \Staff
       \consists Merge_rests_engraver
+      \remove Time_signature_engraver
       \override BreathingSign.Y-offset = #3
     }
   #}

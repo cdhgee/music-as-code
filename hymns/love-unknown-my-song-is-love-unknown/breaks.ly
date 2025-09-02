@@ -13,7 +13,7 @@ breaks = \relative c' {
   s2. \caesura \break s4 |
   \changeTime 6/4
   s1. |
-  s2 s2. \breathe s4 |
+  s2 s2. \caesura \break s4 |
   \changeTime 4/4
   s1 |
   s1 |

@@ -1,6 +1,6 @@
 \include "../music-functions/add-with-block.ly"
 
-makeGenericHymnScore = #(define-scheme-function
+makeGenericHymnScore = #(define-void-function
   (opts)
   (cheap-list?)
   (let* (
@@ -18,9 +18,13 @@ makeGenericHymnScore = #(define-scheme-function
       (partial-bars (not (assoc-get 'partial-bars opts #f)))
       (systems (assoc-get 'systems opts 0))
       (staff-groups (assoc-get 'staff-groups opts '()))
+      (trailer (assoc-get 'trailer opts #f))
     )
+    ; (display trailer)
+    ; (setTrailer trailer)
+    ; (display (string-append "trailer is '" trailer "'"))
     #{
-      \score {
+      \addScore \score  {
         \header {
           title = #title
           composer = #composer-and-dates
@@ -42,6 +46,8 @@ makeGenericHymnScore = #(define-scheme-function
         }
       }
     #}
+    (if trailer #{ \addScore \markup { \vspace #1.5 \fill-line { \smaller \italic #trailer } } #})
+
   )
 )
 

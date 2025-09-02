@@ -18,3 +18,12 @@ makeSpanner = #(define-music-function
 )
 
 \markup titleSize = \markup \huge \larger \larger \bold \etc
+
+annotate = #(define-music-function
+  (annotation note)
+  (string? ly:music?)
+  #{
+    \once \override TextScript.staff-padding = #1
+    #note ^\markup { \smaller \smaller \smallCaps #annotation }
+  #}
+)

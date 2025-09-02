@@ -22,6 +22,7 @@ A collection of music transcribed using Lilypond.
 * [How Shall I Sing that Majesty (Coe Fen)](hymns/coe-fen-how-shall-i-sing-that-majesty)
 * [Immortal, Invisible, God Only Wise (St Denio)](hymns/st-denio-immortal-invisible-god-only-wise)
 * [Let All Mortal Flesh Keep Silence (Picardy)](hymns/picardy-let-all-mortal-flesh-keep-silence)
+* [Lord, Enthroned in Heavenly Splendor](hymns/st-helen-lord-enthroned-in-heavenly-splendor)
 * [Love Divine, All Loves Excelling (Love Divine)](hymns/love-divine-love-divine-all-loves-excelling)
 * [My Song is Love Unknown (Love Unknown)](hymns/love-unknown-my-song-is-love-unknown)
 * [O Worship the Lord in the Beauty of Holiness (Was Lebet)](hymns/was-lebet-o-worship-the-lord-in-the-beauty-of-holiness)

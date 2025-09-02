@@ -1,0 +1,6 @@
+\include "soprano.ly"
+\include "alto.ly"
+\include "tenor.ly"
+\include "bass.ly"
+\include "organ-upper-extras.ly"
+\include "organ-lower-extras.ly"

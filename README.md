@@ -15,6 +15,7 @@ A collection of music transcribed using Lilypond.
 
 ## Hymns for choir and organ
 
+* [Alleluia! Alleluia! Hearts to Heaven and Voices Raise (Lux Eoi)](hymns/lux-eoi-alleluia-alleluia-hearts-to-heaven-and-voices-raise)
 * [Dear Lord and Father of Mankind (Repton)](hymns/repton-dear-lord-and-father-of-mankind)
 * [Glorious Things of Thee Are Spoken (Abbot’s Leigh)](hymns/abbots-leigh-glorious-things-of-thee-are-spoken)
 * [Guide Me, O Thou Great Redeemer (Cwm Rhondda)](hymns/cwm-guide-me-o-thou-great-redeemer)

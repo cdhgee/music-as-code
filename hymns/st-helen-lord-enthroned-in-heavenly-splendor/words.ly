@@ -5,7 +5,7 @@ verseOneWords = \lyricmode {
   Lord en -- throned in heaven -- ly splen -- dor
   first -- be -- got -- ten from the dead,
   thou a -- lone, our strong de -- fen -- der,
-  lift -- est up thy peo -- ple's head.
+  lift -- est up thy peo -- ple’s head.
   Al -- le -- lu -- ia, al -- le -- lu -- ia,
   Je -- su, true and liv -- ing bread.
 
@@ -17,7 +17,7 @@ verseTwoWords = \lyricmode {
 
   Here our hum -- blest hom -- age pay we,
   here in lov -- ing rever -- ence bow;
-  here for faith's dis -- cern -- ment pray we,
+  here for faith’s dis -- cern -- ment pray we,
   les we fail to know thee now.
   Al -- le -- lu -- ia, al -- le -- lu -- ia,
   thou art here, we ask not how.
@@ -31,7 +31,7 @@ verseThreeWords = \lyricmode {
   Though the low -- liest form doth veil thee
   as of old in Beth -- le -- hem,
   here as there thine an -- gels hail thee,
-  branch and flower of Jes -- se's stem.
+  branch and flower of Jes -- se’s stem.
   Al -- le -- lu -- ia, al -- le -- lu -- ia,
   we in wor -- ship join with them.
 

@@ -32,8 +32,8 @@ verseThreeWords = \lyricmode {
 
   When I tread the verge _ of _ Jor -- dan,
   bid my an -- xious fears sub -- side;
-  death of death, and hell's _ de -- _ struct -- ion,
-  land me safe on _ Ca -- naan's side:
+  death of death, and hell’s _ de -- _ struct -- ion,
+  land me safe on _ Ca -- naan’s side:
   songs and prai -- ses, songs and prai -- ses,
   I will ev -- er give to thee,
   I will ev -- _ er _ give to thee.

@@ -30,8 +30,8 @@ verseTwoWords = \tag #'(main full) \lyricmode {
 verseThreeWords = \tag #'(main full) \lyricmode {
 
   \set stanza = "3"
-  En -- light -- en with faith's heart my heart,
-  in -- flame it with love's fire,
+  En -- light -- en with faith’s heart my heart,
+  in -- flame it with love’s fire,
   then shall I sing and take my part
   with that ce -- les -- tial choir.
   They sing, be -- cause thou art their sun;

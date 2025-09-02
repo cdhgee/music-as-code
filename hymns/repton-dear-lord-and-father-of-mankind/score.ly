@@ -1,24 +1,25 @@
+\include "global.ly"
 \include "rh/rh.ly"
 \include "lh/lh.ly"
 \include "breaks.ly"
 \include "words.ly"
 
-\addScore \makeHymnScore #(list
+\makeSATBHymnScore #(list
   (cons 'title "Dear Lord and Father of Mankind")
   (cons 'composer "Charles Hubert Hastings Parry")
   (cons 'dates "1848-1918")
   (cons 'tune "Repton")
   (cons 'meter "86 86 66")
   (cons 'upper (list
-    (cons "Breaks" breaks)
-    (cons "Unison" rightHandVoiceOne)
-    (cons "RH2" rightHandVoiceTwo)
+    (makeVoice "Breaks" breaks)
+    (makeVoice "Unison" rightHandVoiceOne)
+    (makeVoice "RH2" rightHandVoiceTwo)
   ))
   (cons 'lower (list
-    ;(cons "Breaks" breaks)
-    (cons "LH1" leftHandVoiceOne)
-    (cons "LH2" leftHandVoiceTwo)
-    (cons "LH3" leftHandVoiceThree)
+    (makeVoice "Breaks" breaks)
+    (makeVoice "LH1" leftHandVoiceOne)
+    (makeVoice "LH2" leftHandVoiceTwo)
+    (makeVoice "LH3" leftHandVoiceThree)
   ))
   (cons 'words (list verseOneWords verseTwoWords verseThreeWords verseFourWords))
   (cons 'words-voice "Unison")

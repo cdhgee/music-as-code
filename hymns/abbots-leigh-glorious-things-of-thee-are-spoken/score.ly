@@ -1,3 +1,4 @@
+\include "global.ly"
 \include "satb/satb.ly"
 \include "breaks.ly"
 \include "words.ly"

@@ -1,9 +1,10 @@
+\include "global.ly"
 \include "rh/rh.ly"
 \include "lh/lh.ly"
 \include "breaks.ly"
 \include "words.ly"
 
-\addScore \makeSATBHymnScore #(list
+\makeSATBHymnScore #(list
   (cons 'title "Let All Mortal Flesh Keep Silence")
   (cons 'composer "French carol melody, harm. Ralph Vaughan Williams")
   (cons 'dates "1872-1958")

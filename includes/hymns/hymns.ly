@@ -1,5 +1,5 @@
+\include "paper.ly"
 \include "contexts.ly"
 \include "make-generic-hymn-score.ly"
 \include "make-satb-hymn-score.ly"
 \include "make-organ-descant-hymn-score.ly"
-\include "paper.ly"

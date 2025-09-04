@@ -28,5 +28,6 @@ A collection of music transcribed using Lilypond.
 * [Love Divine, All Loves Excelling (Love Divine)](hymns/love-divine-love-divine-all-loves-excelling)
 * [My Song is Love Unknown (Love Unknown)](hymns/love-unknown-my-song-is-love-unknown)
 * [Now Thank We All Our God (Nun Danket)](hymns/nun-danket-now-thank-we-all-our-god)
+* [O Praise Ye the Lord (Laudate Dominum)](hymns/laudate-dominum-o-praise-ye-the-lord)
 * [O Worship the Lord in the Beauty of Holiness (Was Lebet)](hymns/was-lebet-o-worship-the-lord-in-the-beauty-of-holiness)
 * [The Church’s One Foundation (Aurelia)](hymns/aurelia-the-churchs-one-foundation)

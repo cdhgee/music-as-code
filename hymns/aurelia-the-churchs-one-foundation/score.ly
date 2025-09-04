@@ -7,8 +7,7 @@
 \makeSATBHymnScore #(list
   (cons 'metadata (list
     (cons 'title "The Church’s One Foundation")
-    (cons 'composer "Samuel Sebastian Wesley")
-    (cons 'dates "1810-1876")
+    (cons 'composer "Samuel Sebastian Wesley (1810-1876)")
     (cons 'tune "Aurelia")
     (cons 'meter "76 76 76 76")
   ))

@@ -7,8 +7,7 @@
 \makeSATBHymnScore #(list
   (cons 'metadata (list
     (cons 'title "Alleluia, Sing to Jesus!")
-    (cons 'composer "Melody Rowland Huw Prichard")
-    (cons 'dates "1811-1887")
+    (cons 'composer "Melody Rowland Huw Prichard (1811-1887)")
     (cons 'tune "Hyfrydol")
   ))
   (cons 'meter "87 87 87 87")

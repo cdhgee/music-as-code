@@ -7,8 +7,7 @@
 \makeSATBHymnScore #(list
   (cons 'metadata (list
     (cons 'title "My Song is Love Unknown")
-    (cons 'composer "John Ireland")
-    (cons 'dates "1879-1962")
+    (cons 'composer "John Ireland (1879-1962)")
     (cons 'tune "Love Unknown")
     (cons 'meter "66 66 44 44")
   ))

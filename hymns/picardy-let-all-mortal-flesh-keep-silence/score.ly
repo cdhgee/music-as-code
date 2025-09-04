@@ -7,8 +7,7 @@
 \makeSATBHymnScore #(list
   (cons 'metadata (list
     (cons 'title "Let All Mortal Flesh Keep Silence")
-    (cons 'composer "French carol melody, harm. Ralph Vaughan Williams")
-    (cons 'dates "1872-1958")
+    (cons 'composer "French carol melody, harm. Ralph Vaughan Williams (1872-1958)")
     (cons 'tune "Picardy")
     (cons 'meter "87 87 87")
   ))

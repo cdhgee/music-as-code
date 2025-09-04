@@ -7,8 +7,7 @@
 \makeSATBHymnScore #(list
   (cons 'metadata (list
     (cons 'title "O Worship the Lord in the Beauty of Holiness")
-    (cons 'composer "Rheinhardt MS")
-    (cons 'dates "1754")
+    (cons 'composer "Rheinhardt MS (1754)")
     (cons 'tune "Was Lebet")
     (cons 'meter "13 10 13 10")
   ))

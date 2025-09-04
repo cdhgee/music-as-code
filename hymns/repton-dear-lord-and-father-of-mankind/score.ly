@@ -7,8 +7,7 @@
 \makeSATBHymnScore #(list
   (cons 'metadata (list
     (cons 'title "Dear Lord and Father of Mankind")
-    (cons 'composer "Charles Hubert Hastings Parry")
-    (cons 'dates "1848-1918")
+    (cons 'composer "Charles Hubert Hastings Parry (1848-1918)")
     (cons 'tune "Repton")
     (cons 'meter "86 86 66")
   ))

@@ -1,7 +1,7 @@
 # Music as Code
 A collection of music transcribed using Lilypond.
 
-## For solo piano
+## Pieces for solo piano
 
 * [Johann Sebastian Bach](bach)
   * [The Well-Tempered Clavier, Book 1 (BWV 846-869)](bach/well-tempered-clavier-book-1)
@@ -16,7 +16,7 @@ A collection of music transcribed using Lilypond.
 ## Hymns for choir and organ
 
 * [Alleluia! Alleluia! Hearts to Heaven and Voices Raise (Lux Eoi)](hymns/lux-eoi-alleluia-alleluia-hearts-to-heaven-and-voices-raise)
-* [Alleluia, Sing to Jesus! (Hyfrydol)](hymns/hyfrydol-alluluia-sing-to-jesus/)
+* [Alleluia, Sing to Jesus! (Hyfrydol)](hymns/hyfrydol-alluluia-sing-to-jesus)
 * [Dear Lord and Father of Mankind (Repton)](hymns/repton-dear-lord-and-father-of-mankind)
 * [Glorious Things of Thee Are Spoken (Abbot’s Leigh)](hymns/abbots-leigh-glorious-things-of-thee-are-spoken)
 * [Guide Me, O Thou Great Redeemer (Cwm Rhondda)](hymns/cwm-guide-me-o-thou-great-redeemer)
@@ -31,3 +31,7 @@ A collection of music transcribed using Lilypond.
 * [O Praise Ye the Lord (Laudate Dominum)](hymns/laudate-dominum-o-praise-ye-the-lord)
 * [O Worship the Lord in the Beauty of Holiness (Was Lebet)](hymns/was-lebet-o-worship-the-lord-in-the-beauty-of-holiness)
 * [The Church’s One Foundation (Aurelia)](hymns/aurelia-the-churchs-one-foundation)
+
+## Pieces for solo organ
+
+* [Maurice Duruflé -  Chant Donné](organ/durufle-chant-donne)

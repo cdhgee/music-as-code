@@ -1,0 +1,5 @@
+\include "paper.ly"
+\include "contexts.ly"
+\include "make-organ-header.ly"
+\include "make-generic-organ-score.ly"
+\include "make-organ-manuals-score.ly"

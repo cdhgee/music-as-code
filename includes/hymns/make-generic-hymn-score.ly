@@ -14,14 +14,9 @@ makeGenericHymnScore = #(define-void-function
     #{
       \addScore \score  {
         \header {
-          title = \hymnHeader #metadata
-        %   composer = #composer-and-dates
-        %   tune = #tune
-        %   meter = #meter
+          title = \makeHymnHeader #metadata
           breakbefore = ##t
         }
-        % \markup "testing"
-        % \hymnHeader #metadata
         \makeStaffGroups #staff-groups
         \layout {
           system-count = #systems
@@ -40,6 +35,3 @@ makeGenericHymnScore = #(define-void-function
 
   )
 )
-
-% stub to allow transition
-% #(define makeHymnScore makeSATBHymnScore)

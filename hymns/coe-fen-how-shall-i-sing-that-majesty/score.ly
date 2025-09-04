@@ -5,11 +5,13 @@
 
 
 \makeSATBHymnScore #(list
-  (cons 'title "How Shall I Sing that Majesty")
-  (cons 'composer "Ken Naylor")
-  (cons 'dates "1931-1991")
-  (cons 'tune "Coe Fen")
-  (cons 'meter "DCM")
+  (cons 'metadata (list
+    (cons 'title "How Shall I Sing that Majesty")
+    (cons 'composer "Ken Naylor")
+    (cons 'dates "1931-1991")
+    (cons 'tune "Coe Fen")
+    (cons 'meter "DCM")
+  ))
   (cons 'upper (list
     (makeVoice "Breaks" breaks)
     (makeVoice "Soprano" sopranoMusic)

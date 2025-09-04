@@ -4,34 +4,24 @@ makeGenericHymnScore = #(define-void-function
   (opts)
   (cheap-list?)
   (let* (
-      ;; Optional arguments with defaults
-      (title (assoc-get 'title opts #f))
-      (composer (assoc-get 'composer opts #f))
-      (dates (assoc-get 'dates opts #f))
-      (composer-and-dates (cond
-        ((and composer dates) #{ \markup { #composer \smaller \smaller \concat { "(" #dates ")" } } #})
-        (composer composer)
-        (else #f)
-      ))
-      (tune (assoc-get 'tune opts #f))
-      (meter (assoc-get 'meter opts #f))
+      (metadata (assoc-get 'metadata opts '()))
       (partial-bars (not (assoc-get 'partial-bars opts #f)))
       (systems (assoc-get 'systems opts 0))
       (staff-groups (assoc-get 'staff-groups opts '()))
       (trailer (assoc-get 'trailer opts #f))
     )
-    ; (display trailer)
-    ; (setTrailer trailer)
-    ; (display (string-append "trailer is '" trailer "'"))
+
     #{
       \addScore \score  {
         \header {
-          title = #title
-          composer = #composer-and-dates
-          tune = #tune
-          meter = #meter
+          title = \hymnHeader #metadata
+        %   composer = #composer-and-dates
+        %   tune = #tune
+        %   meter = #meter
           breakbefore = ##t
         }
+        % \markup "testing"
+        % \hymnHeader #metadata
         \makeStaffGroups #staff-groups
         \layout {
           system-count = #systems

@@ -5,10 +5,12 @@
 
 
 \makeSATBHymnScore #(list
-  (cons 'title "Immortal, Invisible, God Only Wise")
-  (cons 'composer "Welsh folk melody")
-  (cons 'tune "St Denio")
-  (cons 'meter "11 11 11 11")
+  (cons 'metadata (list
+    (cons 'title "Immortal, Invisible, God Only Wise")
+    (cons 'composer "Welsh folk melody")
+    (cons 'tune "St Denio")
+    (cons 'meter "11 11 11 11")
+  ))
   (cons 'upper (list
     (makeVoice "Breaks" breaks)
     (makeVoice "Soprano" sopranoMusic)

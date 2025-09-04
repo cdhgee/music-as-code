@@ -5,11 +5,13 @@
 \include "words.ly"
 
 \makeSATBHymnScore #(list
-  (cons 'title "Dear Lord and Father of Mankind")
-  (cons 'composer "Charles Hubert Hastings Parry")
-  (cons 'dates "1848-1918")
-  (cons 'tune "Repton")
-  (cons 'meter "86 86 66")
+  (cons 'metadata (list
+    (cons 'title "Dear Lord and Father of Mankind")
+    (cons 'composer "Charles Hubert Hastings Parry")
+    (cons 'dates "1848-1918")
+    (cons 'tune "Repton")
+    (cons 'meter "86 86 66")
+  ))
   (cons 'upper (list
     (makeVoice "Breaks" breaks)
     (makeVoice "Unison" rightHandVoiceOne)

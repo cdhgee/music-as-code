@@ -1,14 +1,15 @@
-\include "global.ly"
 \include "satb/satb.ly"
 \include "breaks.ly"
 \include "words.ly"
 
 \makeSATBHymnScore #(list
-  (cons 'title "Glorious Things of Thee Are Spoken")
-  (cons 'composer "Cyril Taylor")
-  (cons 'dates "1907-1991")
-  (cons 'tune "Abbot’s Leigh")
-  (cons 'meter "87 87 87 87")
+  (cons 'metadata (list
+    (cons 'title "Glorious Things of Thee Are Spoken")
+    (cons 'composer "Cyril Taylor")
+    (cons 'dates "1907-1991")
+    (cons 'tune "Abbot’s Leigh")
+    (cons 'meter "87 87 87 87")
+  ))
   (cons 'upper (list
     (makeVoice "Breaks" breaks)
     (makeVoice "Soprano" sopranoMusic)

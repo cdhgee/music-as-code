@@ -3,11 +3,6 @@
 \include "words.ly"
 
 \makeOrganDescantHymnScore #(list
-  (cons 'title "Glorious Things of Thee Are Spoken")
-  (cons 'composer "Cyril Taylor")
-  (cons 'dates "1907-1991")
-  (cons 'tune "Abbot’s Leigh")
-  (cons 'meter "87 87 87 87")
   (cons 'descant (list
     (makeVoice "Breaks" breaks)
     (makeVoice "Descant" descantMusic)
@@ -25,5 +20,5 @@
   (cons 'words (list descantWords))
   (cons 'words-voice "Descant")
   (cons 'partial-bars #f)
-  (cons 'systems 6)
+  (cons 'systems 5)
 )

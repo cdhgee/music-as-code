@@ -5,11 +5,13 @@
 
 
 \makeSATBHymnScore #(list
-  (cons 'title "Hills of the North, Rejoice")
-  (cons 'composer "Martin Shaw")
-  (cons 'dates "1875-1958")
-  (cons 'tune "Little Cornard")
-  (cons 'meter "66 66 88")
+  (cons 'metadata (list
+    (cons 'title "Hills of the North, Rejoice")
+    (cons 'composer "Martin Shaw")
+    (cons 'dates "1875-1958")
+    (cons 'tune "Little Cornard")
+    (cons 'meter "66 66 88")
+  ))
   (cons 'upper (list
     (makeVoice "Breaks" breaks)
     (makeVoice "Soprano" sopranoMusic)

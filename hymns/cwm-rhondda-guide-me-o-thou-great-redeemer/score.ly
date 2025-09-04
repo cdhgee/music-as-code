@@ -5,11 +5,13 @@
 
 
 \makeSATBHymnScore #(list
-  (cons 'title "Guide Me O Thou Great Redeemer")
-  (cons 'composer "John Hughes")
-  (cons 'dates "1873-1932")
-  (cons 'tune "Cwm Rhondda")
-  (cons 'meter "87 87 47")
+  (cons 'metadata (list
+    (cons 'title "Guide Me O Thou Great Redeemer")
+    (cons 'composer "John Hughes")
+    (cons 'dates "1873-1932")
+    (cons 'tune "Cwm Rhondda")
+    (cons 'meter "87 87 47")
+  ))
   (cons 'upper (list
     (makeVoice "Breaks" breaks)
     (makeVoice "Soprano" sopranoMusic)

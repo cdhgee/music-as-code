@@ -5,11 +5,13 @@
 
 
 \makeSATBHymnScore #(list
-  (cons 'title "Love Divine, All Loves Excelling")
-  (cons 'composer "John Stainer")
-  (cons 'dates "1840-1901")
-  (cons 'tune "Love Divine")
-  (cons 'meter "87 87")
+  (cons 'metadata (list
+    (cons 'title "Love Divine, All Loves Excelling")
+    (cons 'composer "John Stainer")
+    (cons 'dates "1840-1901")
+    (cons 'tune "Love Divine")
+    (cons 'meter "87 87")
+  ))
   (cons 'upper (list
     (makeVoice "Breaks" breaks)
     (makeVoice "Soprano" sopranoMusic)

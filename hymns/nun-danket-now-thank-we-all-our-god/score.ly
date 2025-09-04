@@ -5,10 +5,12 @@
 
 
 \makeSATBHymnScore #(list
-  (cons 'title "Now Thank We All Our God")
-  (cons 'composer "")
-  (cons 'tune "Nun Danket")
-  (cons 'meter "67 67 66 66")
+  (cons 'metadata (list
+    (cons 'title "Now Thank We All Our God")
+    (cons 'composer "")
+    (cons 'tune "Nun Danket")
+    (cons 'meter "67 67 66 66")
+  ))
   (cons 'upper (list
     (makeVoice "Breaks" breaks)
     (makeVoice "Soprano" sopranoMusic)

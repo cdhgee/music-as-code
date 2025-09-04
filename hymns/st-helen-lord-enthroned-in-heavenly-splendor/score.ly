@@ -5,11 +5,13 @@
 
 
 \makeSATBHymnScore #(list
-  (cons 'title "Lord, Enthroned in Heavenly Splendor")
-  (cons 'composer "George Clement Martin")
-  (cons 'dates "1844-1916")
-  (cons 'tune "St Helen")
-  (cons 'meter "87 87 87")
+  (cons 'metadata (list
+    (cons 'title "Lord, Enthroned in Heavenly Splendor")
+    (cons 'composer "George Clement Martin")
+    (cons 'dates "1844-1916")
+    (cons 'tune "St Helen")
+    (cons 'meter "87 87 87")
+  ))
   (cons 'upper (list
     (makeVoice "Breaks" breaks)
     (makeVoice "Soprano" sopranoMusic)

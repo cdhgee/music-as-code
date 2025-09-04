@@ -5,11 +5,13 @@
 
 
 \makeSATBHymnScore #(list
-  (cons 'title "Alleluia! Alleluia! Hearts to Heaven and Voices Raise")
-  (cons 'composer "Arthur Sullivan")
-  (cons 'dates "1842-1900")
-  (cons 'tune "Lux Eoi")
-  (cons 'meter "87 87 87 87")
+  (cons 'metadata (list
+    (cons 'title "Alleluia! Alleluia! Hearts to Heaven and Voices Raise")
+    (cons 'composer "Arthur Sullivan")
+    (cons 'dates "1842-1900")
+    (cons 'tune "Lux Eoi")
+    (cons 'meter "87 87 87 87")
+  ))
   (cons 'upper (list
     (makeVoice "Breaks" breaks)
     (makeVoice "Soprano" sopranoMusic)

@@ -5,11 +5,13 @@
 \include "words.ly"
 
 \makeSATBHymnScore #(list
-  (cons 'title "Let All Mortal Flesh Keep Silence")
-  (cons 'composer "French carol melody, harm. Ralph Vaughan Williams")
-  (cons 'dates "1872-1958")
-  (cons 'tune "Picardy")
-  (cons 'meter "87 87 87")
+  (cons 'metadata (list
+    (cons 'title "Let All Mortal Flesh Keep Silence")
+    (cons 'composer "French carol melody, harm. Ralph Vaughan Williams")
+    (cons 'dates "1872-1958")
+    (cons 'tune "Picardy")
+    (cons 'meter "87 87 87")
+  ))
   (cons 'upper (list
     (makeVoice "Breaks" breaks)
     (makeVoice "Unison" rightHandVoiceOne)

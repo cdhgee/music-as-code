@@ -2,7 +2,7 @@
 \include "beaming.ly"
 \include "notes.ly"
 \include "tuplets.ly"
-\include "../music-functions/make-staff-groups.ly"
+\include "../music-functions/music-functions.ly"
 
 smallNote = \tweak NoteHead.font-size #-2 \etc
 shiftArpeggio = \once \override Arpeggio.padding = #3

@@ -1,3 +1,5 @@
+
+
 makeGenericScore = #(define-void-function
   (opts)
   (cheap-list?)
@@ -6,7 +8,7 @@ makeGenericScore = #(define-void-function
       (header-function (assoc-get 'header-function opts #f))
       (systems (assoc-get 'systems opts 0))
       (staff-groups (assoc-get 'staff-groups opts '()))
-      (trailer-markup (assoc-get 'trailer opts #f))
+      (trailer (assoc-get 'trailer opts #f))
       (header-markup (if
         (and metadata header-function)
         (header-function metadata)
@@ -23,7 +25,7 @@ makeGenericScore = #(define-void-function
         \makeStaffGroups #staff-groups
         \layout {
           system-count = #systems
-          #@contexts
+          $@(map (lambda (f) (f)) contexts)
         }
       }
     #}

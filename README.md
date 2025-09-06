@@ -23,6 +23,7 @@ A collection of music transcribed using Lilypond.
 * [Guide Me, O Thou Great Redeemer (Cwm Rhondda)](hymns/cwm-guide-me-o-thou-great-redeemer)
 * [Hills of the North, Rejoice (Little Cornard)](hymns/little-cornard-hills-of-the-north-rejoice)
 * [How Shall I Sing that Majesty (Coe Fen)](hymns/coe-fen-how-shall-i-sing-that-majesty)
+* [I Vow to Thee, My Country (Thaxted)](hymns/thaxted-i-vow-to-thee-my-country)
 * [Immortal, Invisible, God Only Wise (St Denio)](hymns/st-denio-immortal-invisible-god-only-wise)
 * [Let All Mortal Flesh Keep Silence (Picardy)](hymns/picardy-let-all-mortal-flesh-keep-silence)
 * [Lord, Enthroned in Heavenly Splendor (St Helen)](hymns/st-helen-lord-enthroned-in-heavenly-splendor)

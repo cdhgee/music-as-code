@@ -1,0 +1,5 @@
+\include "soprano.ly"
+\include "soprano-v2.ly"
+\include "alto.ly"
+\include "tenor.ly"
+\include "bass.ly"

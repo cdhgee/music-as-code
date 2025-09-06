@@ -17,6 +17,7 @@ A collection of music transcribed using Lilypond.
 
 * [Alleluia! Alleluia! Hearts to Heaven and Voices Raise (Lux Eoi)](hymns/lux-eoi-alleluia-alleluia-hearts-to-heaven-and-voices-raise)
 * [Alleluia, Sing to Jesus! (Hyfrydol)](hymns/hyfrydol-alluluia-sing-to-jesus)
+* [Blessèd City, Heavenly Salem (Westminster Abbey)](hymns/westminster-abbey-blessed-city-heavenly-salem)
 * [Dear Lord and Father of Mankind (Repton)](hymns/repton-dear-lord-and-father-of-mankind)
 * [Glorious Things of Thee Are Spoken (Abbot’s Leigh)](hymns/abbots-leigh-glorious-things-of-thee-are-spoken)
 * [Guide Me, O Thou Great Redeemer (Cwm Rhondda)](hymns/cwm-guide-me-o-thou-great-redeemer)

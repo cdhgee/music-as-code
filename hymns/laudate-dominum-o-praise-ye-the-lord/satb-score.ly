@@ -1,7 +1,6 @@
 \include "satb/satb.ly"
 \include "breaks.ly"
 \include "words.ly"
-\include "contexts.ly"
 
 
 \makeSATBHymnScore #(list
@@ -23,7 +22,6 @@
   ))
   (cons 'words (list verseOneWords verseTwoWords verseThreeWords verseFourWords))
   (cons 'words-voice "Soprano")
-  (cons 'partial-bars #f)
   (cons 'systems 5)
   (cons 'trailer "Alternative version for verse four on next page")
 )

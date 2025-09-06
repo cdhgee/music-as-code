@@ -23,6 +23,5 @@
   ))
   (cons 'words (list verseOneWords verseTwoWords verseThreeWords verseFourWords))
   (cons 'words-voice "Soprano")
-  (cons 'partial-bars #f)
   (cons 'systems 5)
 )

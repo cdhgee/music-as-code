@@ -19,6 +19,5 @@
   ))
   (cons 'words (list descantWords))
   (cons 'words-voice "Descant")
-  (cons 'partial-bars #f)
   (cons 'systems 5)
 )

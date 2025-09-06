@@ -22,7 +22,6 @@
   (cons 'words (list verseOneWords verseTwoWords verseThreeWords verseFourWords))
   (cons 'words-voice "Soprano")
   (cons 'breaks breaks)
-  (cons 'partial-bars #f)
   (cons 'trailer "Words and music for verse 4 on next page")
   (cons 'systems 4)
 )

@@ -24,6 +24,5 @@
   ))
   (cons 'words (list verseOneWords verseTwoWords verseThreeWords verseFourWords))
   (cons 'words-voice "Unison")
-  (cons 'partial-bars #f)
   (cons 'systems 4)
 )

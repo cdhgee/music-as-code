@@ -4,13 +4,21 @@
 \include "dynamics/dynamics.ly"
 \include "tempi.ly"
 
-\addScore \makePianoScore
-  #(list
+\makePianoScore #(list
+  (cons 'metadata (list
     (cons 'title "Fugue No. 1 in C Major")
-    (cons 'opus "BWV 846" )
-    (cons 'upper rightHand)
-    (cons 'lower leftHand)
-    (cons 'dynamics dynamics)
-    (cons 'tempi tempi)
-    (cons 'systems 10)
-  )
+    (cons 'opus "BWV 846")
+    (cons 'composer "Johann Sebastian Bach (1685-1750)")
+  ))
+  (cons 'upper (list
+    (makeVoice "RH1" rightHandUpper)
+    (makeVoice "RH2" rightHandLower)
+  ))
+  (cons 'lower (list
+    (makeVoice "LH1" leftHandUpper)
+    (makeVoice "LH2" leftHandLower)
+  ))
+  (cons 'tempi tempi)
+  (cons 'dynamics dynamics)
+  (cons 'systems 10)
+)

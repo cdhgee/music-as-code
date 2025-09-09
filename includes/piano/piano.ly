@@ -1,2 +1,6 @@
+\include "paper.ly"
+\include "contexts.ly"
+\include "make-piano-header.ly"
+\include "make-generic-piano-score.ly"
 \include "make-piano-score.ly"
 \include "voices.ly"

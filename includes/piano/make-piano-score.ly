@@ -2,75 +2,29 @@ makePianoScore = #(define-scheme-function
   (opts)
   (cheap-list?)
   (let* (
-      ;; Optional arguments with defaults
-      (title (assoc-get 'title opts #f))
-      (opus (assoc-get 'opus opts #f))
-      (upper (assoc-get 'upper opts #{ #}))
-      (lower (assoc-get 'lower opts #{ #}))
-      (dynamics (assoc-get 'dynamics opts #{ #}))
-      (dynamics-above (assoc-get 'dynamics-above opts #{ #}))
-      (dynamics-below (assoc-get 'dynamics-below opts #{ #}))
+      (upper-music (assoc-get 'upper opts '()))
+      (lower-music (assoc-get 'lower opts '()))
+      (pedal-music (assoc-get 'pedal opts '()))
       (tempi (assoc-get 'tempi opts #{ #}))
-      (pages (assoc-get 'pages opts #f))
-      (systems (assoc-get 'systems opts 0))
-
+      (dynamics-above (assoc-get 'dynamics-above opts #{ #}))
+      (dynamics (assoc-get 'dynamics opts #{ #}))
+      (dynamics-below (assoc-get 'dynamics-below opts #{ #}))
     )
-    #{
-      \score {
-        \header {
-          title = #(assoc-get 'title opts)
-          opus = #(assoc-get 'opus opts)
-          breakbefore = #bookMode
-        }
-        \keepWithTag layout
-        \new PianoStaff \with {
-          \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 10) (padding . 1))
-          \override Fingering.avoid-slur = #'inside
-          \override TupletBracket.tuplet-slur = ##t
-          \override DynamicTextSpanner.staff-padding = #4
-
-          connectArpeggios = ##t
-        }
-        <<
-          \accidentalStyle piano-cautionary
-          \new Dynamics = "tempi" { #tempi }
-          \new Dynamics = "dynamics-above" \with {
-            \override VerticalAxisGroup.staff-affinity = #DOWN
-          }{
-            #dynamics-above
-          }
-          \new Staff = "upper" \with {
-            \override Fingering.direction = #UP
-          } {
-            \tocItem #(string-append title ", " opus)
-            #upper
-          }
-          \new Dynamics = "dynamics-middle" \with {
-            \override VerticalAxisGroup.staff-affinity = #CENTER
-            \override DynamicTextSpanner.style = #'none
-            \override DynamicLineSpanner.staff-padding = #3
-
-          } { #dynamics }
-          \new Staff = "lower" \with {
-            \override Fingering.direction = #DOWN
-          } { #lower }
-          \new Dynamics = "dynamics-below" \with {
-            \override VerticalAxisGroup.staff-affinity = #UP
-          }{
-            #dynamics-below
-          }
-        >>
-        \layout {
-          system-count = #systems
-        }
-      }
-    #}
+    (makeGenericPianoScore (append
+      opts
+      (list (cons 'staves (list
+        (list
+          (cons 'type 'PianoStaff)
+          (cons 'staves (append
+            (list (makeDynamics tempi))
+            (list (makeDynamics dynamics-above))
+            (list (list (cons 'name "upper") (cons 'clef "treble") (cons 'with #{ \with { \override Fingering.direction = #UP } #}) (cons 'voices upper-music)))
+            (list (makeDynamics dynamics))
+            (list (list (cons 'name "lower") (cons 'clef "bass") (cons 'with #{ \with { \override Fingering.direction = #DOWN } #}) (cons 'voices lower-music)))
+            (list (makeDynamics dynamics-below))
+          ))
+        )
+      )))
+    ))
   )
 )
-
-
-% addPianoScore = #(define-void-function
-%   (title opus upper lower dynamics tempi systems)
-%   (string? string? ly:music? ly:music? ly:music? ly:music? number?)
-%   \addScore \makePianoScore title opus upper lower dynamics tempi systems
-% )

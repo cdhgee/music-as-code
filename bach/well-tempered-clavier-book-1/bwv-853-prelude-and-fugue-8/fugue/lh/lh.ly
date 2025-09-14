@@ -1,7 +1,5 @@
-\include "lh-upper.ly"
 \include "lh-lower.ly"
 
 leftHand = #(list
-  (makeVoice "LH1" leftHandUpper)
-  (makeVoice "LH2" leftHandLower)
+  (makeVoice "LH1" leftHandLower)
 )

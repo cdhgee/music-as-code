@@ -1,6 +1,7 @@
 altoMusic = \relative c' {
 
   \voiceTwo
+  \beamCrotchets
 
   \partial 4 d4 |
   ef2 ef4 |

@@ -1,6 +1,7 @@
 bassMusic = \relative c {
 
   \voiceTwo
+  \beamCrotchets
 
   \partial 4 bf4 |
   ef2 c4 |

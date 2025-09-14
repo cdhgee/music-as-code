@@ -1,6 +1,7 @@
 sopranoMusic = \relative c' {
 
   \voiceOne
+  \beamCrotchets
 
   \partial 4 d8 f8 |
   g4. bf8 a8. f16 |

@@ -1,6 +1,7 @@
 tenorMusic = \relative c {
 
   \voiceOne
+  \beamCrotchets
 
   \partial 4 bf'4 |
   bf2 c4 |

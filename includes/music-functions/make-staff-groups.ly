@@ -19,3 +19,16 @@ makeStaffGroups = #(define-music-function
     )
   )
 )
+
+makeStaffGroup = #(define-music-function
+  (staff-group)
+  (cheap-list?)
+  (let (
+      (staffgroup-type (assoc-get 'type staff-group))
+      (staves (assoc-get 'staves staff-group '()))
+      (with-block (assoc-get 'with staff-group #{ \with {} #}))
+
+    )
+    #{ \new #staffgroup-type \with #with-block \makeStaves #staves #}
+  )
+)

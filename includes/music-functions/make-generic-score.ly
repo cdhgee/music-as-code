@@ -8,6 +8,7 @@ makeGenericScore = #(define-void-function
       (header-function (assoc-get 'header-function opts #f))
       (systems (assoc-get 'systems opts 0))
       (staff-groups (assoc-get 'staff-groups opts '()))
+      (staves (assoc-get 'staves opts '()))
       (trailer (assoc-get 'trailer opts #f))
       (header-markup (if
         (and metadata header-function)
@@ -22,7 +23,8 @@ makeGenericScore = #(define-void-function
           title = #header-markup
           breakbefore = ##t
         }
-        \makeStaffGroups #staff-groups
+        % \makeStaffGroups #staff-groups
+        \makeStaves #staves
         \layout {
           system-count = #systems
           $@(map (lambda (f) (f)) contexts)

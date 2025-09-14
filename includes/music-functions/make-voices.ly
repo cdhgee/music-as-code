@@ -17,6 +17,18 @@ makeVoice = #(define-scheme-function
   )
 )
 
+makeVoiceObject = #(define-scheme-function
+  (voice)
+  (cheap-list?)
+  (let (
+      (name (assoc-get 'name voice))
+      (with-block (assoc-get 'with voice #{ #}))
+      (music (assoc-get 'music voice))
+    )
+    #{ \new Voice = #name \with #with-block { #music } #}
+  )
+)
+
 makeVoices = #(define-music-function
   (voices)
   (cheap-list?)
@@ -24,15 +36,7 @@ makeVoices = #(define-music-function
     'SimultaneousMusic
     'elements
     (map
-      (lambda (voice)
-        (let (
-            (name (assoc-get 'name voice))
-            (with-block (assoc-get 'with voice #{ #}))
-            (music (assoc-get 'music voice))
-          )
-          #{ \new Voice = #name \with #with-block { #music } #}
-        )
-      )
+      (lambda (voice) (makeVoiceObject voice))
       voices
     )
   )

@@ -1,6 +1,19 @@
 \include "make-voices.ly"
 
-makeStaff = #(define-music-function
+makeStaff = #(define-scheme-function
+  (name clef voices with)
+  (string? string? cheap-list? ly:context-mod?)
+  (list
+    (cons 'name name)
+    (cons 'clef clef)
+    (cons 'with with)
+    (cons 'voices voices)
+  )
+)
+
+
+
+makeStaffObject = #(define-music-function
   (staff)
   (cheap-list?)
   (let (
@@ -20,7 +33,9 @@ makeStaff = #(define-music-function
   )
 )
 
-makeLyrics = #(define-music-function
+
+
+makeLyricsObject = #(define-music-function
   (staff)
   (cheap-list?)
   (let (
@@ -33,14 +48,24 @@ makeLyrics = #(define-music-function
   )
 )
 
-makeDynamics = #(define-music-function
+makeDynamics = #(define-scheme-function
+  (dynamics with)
+  (ly:music? (ly:context-mod? #f))
+  (append
+    (list (cons 'type 'Dynamics) (cons 'dynamics dynamics))
+    (if with (list (cons 'with with)) (list))
+  )
+)
+
+makeDynamicsObject = #(define-music-function
   (staff)
   (cheap-list?)
   (let (
       (dynamics (assoc-get 'dynamics staff #{ #}))
+      (with (assoc-get 'with staff #{ \with {} #}))
     )
     #{
-      \new Dynamics { #dynamics }
+      \new Dynamics \with #with { #dynamics }
     #}
   )
 )
@@ -57,9 +82,12 @@ makeStaves = #(define-music-function
             (type (assoc-get 'type staff 'Staff))
           )
           (cond
-            ((eq? type 'Staff) (makeStaff staff))
-            ((eq? type 'Lyrics) (makeLyrics staff))
-            ((eq? type 'Dynamics) (makeDynamics staff))
+            ((eq? type 'PianoStaff) (makeStaffGroup staff))
+            ((eq? type 'ChoirStaff) (makeStaffGroup staff))
+            ((eq? type 'GrandStaff) (makeStaffGroup staff))
+            ((eq? type 'Staff) (makeStaffObject staff))
+            ((eq? type 'Lyrics) (makeLyricsObject staff))
+            ((eq? type 'Dynamics) (makeDynamicsObject staff))
           )
         )
       )

@@ -17,11 +17,12 @@ makePianoScore = #(define-scheme-function
           (cons 'type 'PianoStaff)
           (cons 'staves (append
             (list (makeDynamics tempi))
-            (list (makeDynamics dynamics-above))
-            (list (list (cons 'name "upper") (cons 'clef "treble") (cons 'with #{ \with { \override Fingering.direction = #UP } #}) (cons 'voices upper-music)))
+            (list (makeDynamics dynamics-above #{ \with { \override VerticalAxisGroup.staff-affinity = #DOWN } #}))
+            (list (makeStaff "upper" "treble" upper-music #{ \with { \override Fingering.direction = #UP } #}))
             (list (makeDynamics dynamics))
-            (list (list (cons 'name "lower") (cons 'clef "bass") (cons 'with #{ \with { \override Fingering.direction = #DOWN } #}) (cons 'voices lower-music)))
-            (list (makeDynamics dynamics-below))
+            (list (makeStaff "lower" "bass" lower-music #{ \with { \override Fingering.direction = #DOWN } #}))
+            (list (makeDynamics dynamics-below #{ \with { \override VerticalAxisGroup.staff-affinity = #UP } #}))
+
           ))
         )
       )))

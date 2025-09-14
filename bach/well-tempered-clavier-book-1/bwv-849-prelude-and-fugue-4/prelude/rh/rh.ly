@@ -3,16 +3,9 @@
 \include "rh-voice3.ly"
 \include "rh-voice4.ly"
 
-rightHand = \relative c' {
-
-  \global
-  \clef treble
-  <<
-
-    \new Voice \rightHandVoiceOne
-    \new Voice \rightHandVoiceTwo
-    \new Voice \rightHandVoiceThree
-    \new Voice \rightHandVoiceFour
-
-  >>
-}
+rightHand = #(list
+  (makeVoice "RH1" rightHandVoiceOne)
+  (makeVoice "RH2" rightHandVoiceTwo)
+  (makeVoice "RH3" rightHandVoiceThree)
+  (makeVoice "RH4" rightHandVoiceFour)
+)

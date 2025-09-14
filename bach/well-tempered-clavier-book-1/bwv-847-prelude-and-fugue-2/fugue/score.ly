@@ -10,13 +10,8 @@
     (cons 'opus "BWV 847")
     (cons 'composer "Johann Sebastian Bach (1685-1750)")
   ))
-  (cons 'upper (list
-    (makeVoice "RH1" rightHandUpper)
-    (makeVoice "RH2" rightHandLower)
-  ))
-  (cons 'lower (list
-    (makeVoice "LH1" leftHandLower)
-  ))
+  (cons 'upper rightHand)
+  (cons 'lower leftHand)
   (cons 'tempi tempi)
   (cons 'dynamics dynamics)
   (cons 'systems 12)

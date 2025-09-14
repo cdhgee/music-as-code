@@ -21,7 +21,7 @@ leftHandUpper = \relative c {
   r8 a'8( g8 cs,8 f8 d8 e8 g8) |
 
   \barNumberCheck 33
-  s1 |
+  s4 r4 r2 |
   s2 a2 |
   <fs a>1 |
   \fine

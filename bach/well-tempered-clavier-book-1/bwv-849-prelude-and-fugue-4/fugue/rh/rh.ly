@@ -2,15 +2,8 @@
 \include "rh-middle.ly"
 \include "rh-lower.ly"
 
-rightHand = \relative c' {
-
-  \global
-  \clef treble
-  <<
-
-    \new Voice \rightHandUpper
-    \new Voice \rightHandLower
-    \new Voice \rightHandMiddle
-
-  >>
-}
+rightHand = #(list
+  (makeVoice "RH1" rightHandUpper)
+  (makeVoice "RH2" rightHandMiddle)
+  (makeVoice "RH3" rightHandLower)
+)

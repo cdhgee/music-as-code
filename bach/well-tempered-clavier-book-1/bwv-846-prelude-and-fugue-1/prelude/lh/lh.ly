@@ -1,16 +1,21 @@
 \include "lh-upper.ly"
 \include "lh-lower.ly"
 
-leftHand = \relative c {
+leftHand = #(list
+  (makeVoice "LH1" leftHandUpper)
+  (makeVoice "LH2" leftHandLower)
+)
 
-  \global
-  \clef bass
-  <<
+% leftHand = \relative c {
 
-    \new Voice \leftHandUpper
-    \new Voice \leftHandLower
+%   \global
+%   \clef bass
+%   <<
 
-  >>
+%     \new Voice \leftHandUpper
+%     \new Voice \leftHandLower
 
-}
+%   >>
+
+% }
 

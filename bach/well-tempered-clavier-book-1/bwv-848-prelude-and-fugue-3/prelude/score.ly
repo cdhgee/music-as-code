@@ -4,13 +4,15 @@
 \include "dynamics/dynamics.ly"
 \include "tempi.ly"
 
-\addScore \makePianoScore
-  #(list
+\makePianoScore #(list
+  (cons 'metadata (list
     (cons 'title "Prelude No. 3 in C# Major")
     (cons 'opus "BWV 848")
-    (cons 'upper rightHand)
-    (cons 'lower leftHand)
-    (cons 'dynamics dynamics)
-    (cons 'tempi tempi)
-    (cons 'systems 14)
-  )
+    (cons 'composer "Johann Sebastian Bach (1685-1750)")
+  ))
+  (cons 'upper rightHand)
+  (cons 'lower leftHand)
+  (cons 'tempi tempi)
+  (cons 'dynamics dynamics)
+  (cons 'systems 14)
+)

@@ -32,9 +32,12 @@ leftHandLower = \relative c {
   b,32( cs32 d32 e32 d32 cs32 d32 b32-4) e32-1( fs32-3 g32 a32 g32 fs32 g32 e32 a32-1 b32-3 cs32 d32 cs32 b32 cs32 a32 d32-1 e32-3 fs32 g32 fs32 e32 fs32 d32 |
 
   \barNumberCheck 25
-  g8.) \smallNoteChords { g,,16 fs8. e16 d8. c16 b8. a16 } |
-  \smallNoteChords { g8. fs16  e8. d16 a'2 } |
-  \voiceTwo <\tweak X-offset #0.25 \tweak font-size #-2 d, d'>1 \tweak padding #1 \fermata  |
+  % g8.) \smallNoteChords { g,,16 fs8. e16 d8. c16 b8. a16 } |
+  % \smallNoteChords { g8. fs16  e8. d16 a'2 } |
+  % \voiceTwo <\tweak X-offset #0.25 \tweak font-size #-2 d, d'>1 \tweak padding #1 \fermata  |
+  g8.) g,16 fs8. e16 d8. c16 b8. a16 |
+  g8. fs16  e8. d16 a'2  |
+  \voiceTwo d,1 \tweak padding #1 \fermata  |
   \fine
 
 

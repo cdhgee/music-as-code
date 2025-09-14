@@ -1,6 +1,6 @@
 dynamics = {
 
-  s8\p s8\mdi "sempre legato" s2. |
+  s1\postDynamic "p" "sempre legato" |
   s1 |
   s2 s2\cresc |
   s1 |

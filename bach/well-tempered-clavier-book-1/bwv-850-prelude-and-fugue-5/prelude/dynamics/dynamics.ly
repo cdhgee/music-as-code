@@ -48,7 +48,9 @@ dynamics = {
   s1 |
   s1 |
   s1 |
-  s4 s2.\mdi "meno Allegro" |
+
+  \barNumberCheck 33
+  s1 |
   s4\sf s4\sf s2\> |
   s1\p |
   \fine

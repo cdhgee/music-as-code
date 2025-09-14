@@ -3,14 +3,7 @@
 
 
 
-rightHand = \relative c' {
-
-  \global
-  \clef treble
-  <<
-
-    \new Voice \rightHandUpper
-    \new Voice \rightHandLower
-
-  >>
-}
+rightHand = #(list
+  (makeVoice "RH1" rightHandUpper)
+  (makeVoice "RH2" rightHandLower)
+)

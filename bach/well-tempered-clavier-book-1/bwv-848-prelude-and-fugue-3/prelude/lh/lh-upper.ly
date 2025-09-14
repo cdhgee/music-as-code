@@ -42,7 +42,7 @@ leftHandUpper = \relative c {
   s4. * 4
   \staffUp es'16-1( gs16-2 cs16-4 gs16-2 es16-1 cs16-4 |
   \staffDown as16-3 fss16-2 e16-1 cs16-3 es16-2 fs16-1) |
-  r8 <cs es gs>8 <ds fs gs>8 |
+  f8\rest <cs es gs>8 <ds fs gs>8 |
   \oneVoice s4. |
   \fine
 

@@ -1,10 +1,5 @@
 \include "lh-lower.ly"
 
-leftHand = \relative c {
-
-  \global
-  \clef bass
-
-  \new Voice \leftHandLower
-
-}
+leftHand = #(list
+  (makeVoice "LH1" leftHandLower)
+)

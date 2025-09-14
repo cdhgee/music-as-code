@@ -3,7 +3,5 @@
 \include "../../../includes/common/common.ly"
 \include "../../../includes/piano/piano.ly"
 \include "fugue/score.ly"
-\include "../header.ly"
-
 
 $@score-list

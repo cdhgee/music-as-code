@@ -4,15 +4,15 @@
 \include "dynamics/dynamics.ly"
 \include "tempi.ly"
 
-\addScore \makePianoScore
-  #(list
-    (cons 'title "Prelude No. 7 in E flat Major")
+\makePianoScore #(list
+  (cons 'metadata (list
+    (cons 'title "Prelude No. 7 in E♭ Major")
     (cons 'opus "BWV 852")
-    (cons 'upper rightHand)
-    (cons 'lower leftHand)
-    (cons 'dynamics dynamicsMiddle)
-    ; (cons 'dynamics-below dynamicsLower)
-    ; (cons 'dynamics-above dynamicsUpper)
-    (cons 'tempi tempi)
-    (cons 'systems 24)
-  )
+    (cons 'composer "Johann Sebastian Bach (1685-1750)")
+  ))
+  (cons 'upper rightHand)
+  (cons 'lower leftHand)
+  (cons 'tempi tempi)
+  (cons 'dynamics dynamicsMiddle)
+  (cons 'systems 24)
+)

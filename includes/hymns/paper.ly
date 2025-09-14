@@ -1,3 +1,6 @@
+#(set-default-paper-size "letterlandscape")
+
+
 \paper {
 
   indent = #0

@@ -9,7 +9,7 @@ makeOrganManualsScore = #(define-scheme-function
     (makeGenericOrganScore (append
       opts
       (list (cons 'staff-groups (list (list
-        (cons 'type 'ChoirStaff)
+        (cons 'type 'PianoStaff)
         (cons 'staves (append
           (list (list (cons 'type 'Dynamics) (cons 'dynamics tempi)))
           (list (list (cons 'name "upper") (cons 'clef "treble") (cons 'voices upper-music)))

@@ -46,6 +46,7 @@ conditionalPaperBlock = #(define-scheme-function
   )
 )
 
+  % #(set-paper-size "letter" 'landscape)
 
 \paper {
   ragged-right = ##f
@@ -85,6 +86,13 @@ conditionalPaperBlock = #(define-scheme-function
     (minimum-distance . 0.1)
   )
 
+  % markup-system-spacing = #'(
+  %   (basic-distance . 0.1)
+  %   (padding . 0)
+  %   (stretchability . 0)
+  %   (minimum-distance . 0)
+  % )
+
   %   last-bottom-spacing = #'(
   %   (basic-distance . 0.1)
   %   (padding . 0.1)
@@ -93,11 +101,18 @@ conditionalPaperBlock = #(define-scheme-function
   % )
 
   score-markup-spacing = #'(
-    (basic-distance . 0.6)
+    (basic-distance . 0.1)
     (padding . 0.1)
-    (stretchability . 60)
+    (stretchability . 30)
     (minimum-distance . 0.1)
   )
+
+  % markup-system-spacing = #'(
+  %   (basic-distance . 0.6)
+  %   (padding . 0.1)
+  %   (stretchability . 60)
+  %   (minimum-distance . 0.1)
+  % )
 
 
   % score-system-spacing = #'(
@@ -117,14 +132,14 @@ conditionalPaperBlock = #(define-scheme-function
 
   last-bottom-spacing =
     #'(
-      (basic-distance . 6)
-      (minimum-distance . 4)
+      (basic-distance . 0.6)
+      (minimum-distance . 0.1)
       (padding . 3)
       (stretchability . 30)
     ) % defaults 1, 0, 1, 30
 
   % top-system-spacing.minimum-distance = 10
-  page-breaking = #ly:minimal-breaking
+  % page-breaking = #ly:minimal-breaking
   % first-page-number = 2
 
   #(set-paper-size "letter")
@@ -135,9 +150,9 @@ conditionalPaperBlock = #(define-scheme-function
   left-margin = 10\mm % default 10
   right-margin = 10\mm % default 10
 
-  two-sided = ##t
-  inner-margin = 12\mm
-  outer-margin = 8\mm
+  % two-sided = ##t
+  % inner-margin = 12\mm
+  % outer-margin = 8\mm
 
   tocTitleMarkup = \markup \column {
     \fill-line { \titleSize "Table of Contents" }
@@ -157,11 +172,11 @@ conditionalPaperBlock = #(define-scheme-function
 #(define score-list '())
 
 addScore = #(define-void-function
-  (sc)
-  (ly:score?)
-  (set!
-    score-list
-    (append score-list (list sc))
+  (score-or-markup)
+  (scheme?)
+  (if (or (ly:score? score-or-markup) (markup? score-or-markup))
+    (set! score-list (append score-list (list score-or-markup)))
+    (ly:input-warning "addScore: Expected a score or markup object, got something else.")
   )
 )
 

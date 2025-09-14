@@ -3,3 +3,4 @@
 \include "make-organ-header.ly"
 \include "make-generic-organ-score.ly"
 \include "make-organ-manuals-score.ly"
+\include "make-organ-pedal-score.ly"

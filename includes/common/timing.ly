@@ -9,8 +9,8 @@ changeTime = #(define-music-function
       (numerator (car ts-list))
       (denominator (cdr ts-list))
     )
-    (define timeBase denominator)
-    (define timeCount numerator)
+    (set! timeBase denominator)
+    (set! timeCount numerator)
     (make-music
       'TimeSignatureMusic
       'beat-structure

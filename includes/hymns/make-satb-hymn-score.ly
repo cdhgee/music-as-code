@@ -11,7 +11,7 @@ makeSATBHymnScore = #(define-scheme-function
     )
     (makeGenericHymnScore (append
       opts
-      (list (cons 'staff-groups (list (list
+      (list (cons 'staves (list (list
         (cons 'type 'ChoirStaff)
         (cons 'staves (append
           (list (list (cons 'name "upper") (cons 'clef "treble") (cons 'voices upper-music)))
@@ -22,6 +22,3 @@ makeSATBHymnScore = #(define-scheme-function
     ))
   )
 )
-
-% stub to allow transition
-#(define makeHymnScore makeSATBHymnScore)

@@ -91,3 +91,12 @@ postDynamic = #(define-scheme-function
     #(make-dynamic-script #{ \markup { \dynamic #d \normal-text \italic #s } #})
   #}
 )
+
+preDynamic = #(define-scheme-function
+  (s d)
+  (string? string?)
+  #{
+    \tweak self-alignment-X #RIGHT \tweak parent-alignment-X ##f
+    #(make-dynamic-script #{ \markup { \normal-text \italic #s \dynamic #d } #})
+  #}
+)

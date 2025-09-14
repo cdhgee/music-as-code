@@ -8,3 +8,15 @@ organStaffContext = #(define-scheme-function
     }
   #}
 )
+
+organDynamicsContext = #(define-scheme-function
+  ()
+  ()
+  #{
+    \context {
+      \Dynamics
+      \override DynamicTextSpanner.style = #'none
+      \override DynamicLineSpanner.staff-padding = #3
+    }
+  #}
+)

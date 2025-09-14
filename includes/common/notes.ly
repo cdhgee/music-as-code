@@ -22,3 +22,5 @@ smallMove = \move-note #1.5
 smallMoveBack = \move-note #-1.5
 mediumMove = \move-note #1.8
 largeMove = \move-note #2.0
+
+smallNotes = \override NoteHead.font-size = #-2

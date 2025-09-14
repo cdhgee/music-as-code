@@ -5,7 +5,7 @@ makeGenericOrganScore = #(define-void-function
     opts
     (list
       (cons 'header-function makeOrganHeader)
-      (cons 'contexts (list organStaffContext))
+      (cons 'contexts (list organStaffContext organDynamicsContext))
     )
   ))
 )
